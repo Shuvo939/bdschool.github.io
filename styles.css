@@ -21,6 +21,12 @@ a {
     color:#1772d0; text-decoration:none;
 }
 
+p {
+    font-size: 13px;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    line-height: 20px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
