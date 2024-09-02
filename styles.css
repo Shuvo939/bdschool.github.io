@@ -36,6 +36,7 @@ nav ul li a {
 section {
     padding: 2rem;
     text-align: center;
+    display: flex;
 }
 
 section h2 {
