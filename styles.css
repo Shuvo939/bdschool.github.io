@@ -8,6 +8,10 @@ body, div, p, a {
 body {
     margin: 0px !important;
 }
+body.dark-mode {
+    background: #0d1117;
+    transition: color 0.3s ease;
+}
 img {
     border: 1px solid #eee;
     padding: 7px;
@@ -83,12 +87,4 @@ body.dark-mode button#darkModeToggle {
 }
 body.dark-mode #darkModeToggle {
     color: #fff; /* Dark mode color */
-}
-#darkModeToggle {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: #333; /* Light mode color */
-    transition: color 0.3s ease;
 }
