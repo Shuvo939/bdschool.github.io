@@ -15,6 +15,24 @@ img {
     height: 150px;
     background-size: cover;
 }
+.publication-section-div {
+    display: flex; 
+    flex-direction: row; 
+    padding: 10px;
+    gap: 15px;
+    border: 1.5px solid #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
 header {
     background-color: #333;
     color: #fff;
