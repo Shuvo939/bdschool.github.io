@@ -197,3 +197,7 @@ button[type="submit"]:hover {
 nav ul li a.active {
     border-bottom: 2px solid #fff;
 }
+name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+}
