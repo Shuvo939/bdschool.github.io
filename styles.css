@@ -29,6 +29,13 @@ body.dark-mode .main-div {
     box-shadow: 0 0 1px 1.5px #040d11;
     background: #091b23;
 }
+.sub-div {
+    padding: 20px 20px 10px;
+    border-top: 2px solid #eee;
+}
+body.dark-mode .publication-section-div {
+    border: 1.5px solid #0a151a;
+}
 img {
     border: 1px solid #eee;
     padding: 7px;
