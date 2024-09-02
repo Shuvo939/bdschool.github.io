@@ -1,4 +1,4 @@
-body, td, th, tr, p, a {
+body, div, p, a {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 13px;
     word-spacing: -1px;
@@ -6,7 +6,7 @@ body, td, th, tr, p, a {
     letter-spacing: -0.15px;
 }
 body {
-    margin: 0px;
+    margin: 0px !important;
 }
 header {
     background-color: #333;
