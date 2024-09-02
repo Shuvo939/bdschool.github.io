@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirdeshona | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Light Mode (Default) */
+        body {
+            background-color: white;
+            color: black;
+        }
+        header, footer {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        nav ul li a {
+            color: #333;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+        body.dark-mode header, 
+        body.dark-mode footer {
+            background-color: #1e1e1e;
+            color: white;
+        }
+        body.dark-mode nav ul li a {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
         <nav>
             <ul>
                 <li><a href="index.html">Main</a></li>
@@ -50,5 +79,13 @@
     <footer>
         <p>&copy; 2024 Nirdeshona. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Dark Mode Toggle Function
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
