@@ -33,7 +33,7 @@ body.dark-mode .main-div {
     padding: 20px 20px 10px;
     border-top: 2px solid #eee;
 }
-.sub-div {
+body.dark-mode .sub-div {
     border-top: 2px solid #0a151a;
 }
 body.dark-mode .publication-section-div {
