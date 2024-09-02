@@ -35,81 +35,15 @@ a.my-link {
     border-radius: 100px;
     background: #e8f2f6;
 }
-
-
-
-
-
-
-
-
-
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-heading {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 22px;
-}
-
 a {
-    color:#1772d0; text-decoration:none;
+    color:#1772d0; 
+    text-decoration:none;
 }
-
 p {
     font-size: 13px;
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     line-height: 20px;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 2rem;
-    text-align: center;
-    display: flex;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.project {
-    background-color: #fff;
-    padding: 1rem;
-    margin: 1rem 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -117,142 +51,40 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
-
 footer p {
     margin: 0;
-}
-
-/* General Styles for Sections */
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
-/* About Page Styles */
-.about-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-}
-
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 1rem;
-    object-fit: cover;
-}
-
-.about-content {
-    max-width: 600px;
-    margin: 1rem;
-    text-align: left;
-}
-
-/* Projects Page Styles */
-.projects-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem 0;
-}
-
-.project-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 300px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.project-info {
-    padding: 1rem;
-    text-align: left;
-}
-
-.project-info h2 {
-    margin-top: 0;
-}
-
-.project-link {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.project-link:hover {
-    text-decoration: underline;
-}
-
-/* Contact Page Styles */
-.contact-section {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 2rem 0;
-}
-
-.contact-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-button[type="submit"] {
-    padding: 0.75rem 1.5rem;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button[type="submit"]:hover {
-    background-color: #555;
-}
-
-/* Active Link Style */
-nav ul li a.active {
-    border-bottom: 2px solid #fff;
 }
 name {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 32px;
+}
+
+
+
+
+/* Light Mode (Default) */
+body {
+    background-color: white;
+    color: black;
+}
+header, footer {
+    background-color: #f8f8f8;
+    color: #333;
+}
+nav ul li a {
+    color: #333;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+body.dark-mode header, 
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: white;
+}
+body.dark-mode nav ul li a {
+    color: white;
 }
