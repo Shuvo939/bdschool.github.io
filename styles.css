@@ -60,14 +60,19 @@ name {
 }
 
 
-
-
 .dark-mode-div {
     display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
+    flex-direction: row-reverse;
 }
-
+button#darkModeToggle {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 2px solid #ddd;
+    margin: 10px;
+}
 #darkModeToggle {
     background-color: transparent;
     border: none;
