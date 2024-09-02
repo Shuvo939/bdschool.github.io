@@ -62,29 +62,21 @@ name {
 
 
 
-/* Light Mode (Default) */
-body {
-    background-color: white;
-    color: black;
-}
-header, footer {
-    background-color: #f8f8f8;
-    color: #333;
-}
-nav ul li a {
-    color: #333;
+.dark-mode-div {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
 }
 
-/* Dark Mode */
-body.dark-mode {
-    background-color: #121212;
-    color: white;
+#darkModeToggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333; /* Light mode color */
+    transition: color 0.3s ease;
 }
-body.dark-mode header, 
-body.dark-mode footer {
-    background-color: #1e1e1e;
-    color: white;
-}
-body.dark-mode nav ul li a {
-    color: white;
+
+body.dark-mode #darkModeToggle {
+    color: #fff; /* Dark mode color */
 }
