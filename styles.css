@@ -12,6 +12,9 @@ img {
     border-radius: 8px;
     border: 1.5px solid #eee;
     padding: 5px;
+    width: 200px;
+    height: 150px;
+    background-size: cover;
 }
 header {
     background-color: #333;
