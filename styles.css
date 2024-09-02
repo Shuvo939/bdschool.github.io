@@ -23,7 +23,18 @@ img {
     border: 1.5px solid #eee;
     margin: 12px 20px;
 }
-
+.my-links-div {
+    padding: 20px;
+    border-top: 2px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+a.my-link {
+    border: 1.5px solid #ddd;
+    padding: 5px 10px 7px;
+    border-radius: 100px;
+    background: #e8f2f6;
+}
 
 
 
