@@ -60,10 +60,11 @@ a.my-link {
     background: #e8f2f6;
 }
 body.dark-mode a.my-link {
-    border: 1.5px solid #1a2c3b;
+    border: 1.5px solid #091f1e;
     padding: 5px 10px 7px;
     border-radius: 100px;
-    background: #143847;
+    background: #09231f;
+    box-shadow: 0 0 1px 1px #061413;
 }
 a {
     color:#1772d0; 
