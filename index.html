@@ -145,10 +145,10 @@ img {
     background-size: cover;
 }
 .my-links-div {
-    padding: 0 20px 20px;
     border-top: 2px solid #eeeeee00;
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 body.dark-mode .my-links-div {
     border-top: 2px solid #0a151a;
@@ -268,11 +268,20 @@ body.dark-mode #darkModeToggle {
 		        <p style="text-align:center; font-size:32px; font-family: 'Lato', Verdana, Helvetica, sans-serif;">
 			    <name>Abdullah Al Noman</name>
 		        </p>
-		        <div class="my-links-div">
-			    <a class="my-link" style="color:#1772d0; text-decoration:none;" href="mailto:asimeono@mit.edu">Email</a>
-			    <a class="my-link" style="color:#1772d0; text-decoration:none;" href="https://scholar.google.com/citations?user=RNDrSGYAAAAJ&hl=en" target="_blank">Google Scholar</a>
-			    <a class="my-link" style="color:#1772d0; text-decoration:none;" href="https://www.linkedin.com/in/anthonysimeonov/" target="_blank">LinkedIn</a>
-		        </div>
+			<div class="my-links-div">
+			    <a class="my-link" style="color:#1772d0; text-decoration:none;" href="https://twitter.com/yourusername" target="_blank">
+			        <i class="fab fa-twitter"></i> Twitter
+			    </a>
+			    <a class="my-link" style="color:#1772d0; text-decoration:none;" href="mailto:asimeono@mit.edu">
+			        <i class="fas fa-envelope"></i> Email
+			    </a>
+			    <a class="my-link" style="color:#1772d0; text-decoration:none;" href="#">
+			        <i class="fas fa-file-alt"></i> CV
+			    </a>
+			    <a class="my-link" style="color:#1772d0; text-decoration:none;" href="https://www.linkedin.com/in/anthonysimeonov/" target="_blank">
+			        <i class="fab fa-linkedin"></i> LinkedIn
+			    </a>
+			</div>
 		    </div>
 		    <div class="hero-section-sub-2">
 		        <img class="hero-profile-image" alt="profile photo" src="assets/demo-profile-pic.png">
