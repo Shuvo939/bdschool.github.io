@@ -33,22 +33,93 @@ body.dark-mode {
     width: 100%;
     max-width: 800px;
     border: 0px;
-    border-spacing: 0px;
-    border-collapse: separate;
     margin-right: auto;
     margin-left: auto;
-    box-shadow: 0 0 1px 1.5px #ddd;
-    border-left: 1.5px solid #eee;
-    border-right: 1.5px solid #eee;
+    box-shadow: 0 0 1px 1.5px #dddddd00;
+    border-left: 1.5px solid #eeeeee00;
+    border-right: 1.5px solid #eeeeee00;
 }
 body.dark-mode .main-div {
     border: 1.5px solid #0a151a;
     box-shadow: 0 0 1px 1.5px #040d11;
     background: #091b23;
 }
+@media only screen and (min-width: 600.01px) {
+    .hero-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px;
+	gap: 20px;
+    }
+    name {
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    	font-size: 32px;
+    }
+    .hero-section-sub-1 {
+	max-width: 65%;
+    }
+    .hero-section-sub-2 {
+	max-width: 35%;
+    }
+    .hero-profile-image {
+        width: 100%;
+    	height: 100%;
+    	border-radius: 50%;
+    	box-shadow: 0 0 0.5px 0.8px #cccccc00;
+    	border: 1px solid #dddddd00;
+    	padding: 0px;
+    }
+    .publication-section-div {
+        display: flex;
+	flex-direction: row;
+    	width: 100%;
+    	gap: 40px;
+	padding: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        display: flex;
+        padding: 20px 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    name {
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    	font-size: 28px;
+    }
+    .hero-section-sub-1 {
+	max-width: 100%;
+	text-align: center;
+        padding: 0 10px;
+    }
+    .hero-section-sub-2 {
+	max-width: 100%;
+	padding: 0 10px;
+    }
+    .hero-profile-image {
+        width: 100%;
+	max-width: 200px;
+    	height: 100%;
+    	border-radius: 50%;
+    	box-shadow: 0 0 0.5px 0.8px #cccccc00;
+    	border: 1px solid #dddddd00;
+    	padding: 0px;
+    }
+   .my-links-div {
+        justify-content: center;
+    }
+    .publication-section-div {
+        display: flex;
+	flex-direction: column;
+    	padding: 10px 20px;
+    	gap: 20px;
+    }
+}
 .sub-div {
     padding: 20px 20px 10px;
-    border-top: 2px solid #eee;
+    border-top: 2px solid #eeeeee00;
 }
 body.dark-mode .sub-div {
     border-top: 2px solid #0a151a;
@@ -57,23 +128,15 @@ body.dark-mode .publication-section-div {
     border: 1.5px solid #0a151a;
 }
 img {
-    border: 1px solid #eee;
-    padding: 7px;
+    border: 1px solid #eeeeee00;
+    padding: 0px;
     width: 200px;
     height: 150px;
     background-size: cover;
 }
-.publication-section-div {
-    display: flex; 
-    flex-direction: row; 
-    padding: 10px;
-    gap: 15px;
-    border: 1.5px solid #eee;
-    margin: 12px 20px;
-}
 .my-links-div {
-    padding: 20px;
-    border-top: 2px solid #eee;
+    padding: 0 20px 20px;
+    border-top: 2px solid #eeeeee00;
     display: flex;
     gap: 10px;
 }
@@ -81,10 +144,10 @@ body.dark-mode .my-links-div {
     border-top: 2px solid #0a151a;
 }
 a.my-link {
-    border: 1.5px solid #ddd;
+    border: 1.5px solid #dddddd63;
     padding: 5px 10px 7px;
     border-radius: 100px;
-    background: #e8f2f6;
+    background: #e8f2f600;
 }
 body.dark-mode a.my-link {
     border: 1.5px solid #091f1e;
@@ -117,10 +180,6 @@ footer {
 }
 footer p {
     margin: 0;
-}
-name {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
 }
 
 
@@ -155,7 +214,7 @@ body.dark-mode #darkModeToggle {
 
 <body>
 <div class="main-div">
-<div class="dark-mode-div">
+<div class="dark-mode-div" style="display:none;">
     <button id="darkModeToggle">
         <i id="darkModeIcon" class="fas fa-moon"></i>
     </button>
@@ -193,8 +252,8 @@ toggleButton.addEventListener('click', () => {
 });
 </script>
 	<div style="width:100%; margin-right:auto; margin-left:auto;">
-	    <div style="display:flex; flex-direction:row; align-items:center; padding:2.5%; box-sizing:border-box;">
-		<div style="flex: 1; padding:10px; max-width:65%;">
+	    <div class="hero-section">
+		<div class="hero-section-sub-1">
 		    <p style="text-align:center; font-size:32px; font-family: 'Lato', Verdana, Helvetica, sans-serif;">
 			<name>Abdullah Al Noman</name>
 		    </p>
@@ -212,8 +271,8 @@ toggleButton.addEventListener('click', () => {
 			<a style="color:#1772d0; text-decoration:none;" href="https://research.nvidia.com/labs/srl/">NVIDIA's Seattle Robotics Lab</a>.
 		    </p>
 		</div>
-		<div style="flex: 0 0 auto; padding:10px; max-width:35%;">
-		    <img style="width:100%; height:100%; border-radius:50%; box-shadow:0 0 0.5px 0.8px #ccc; border:1px solid #ddd; padding:5px;" alt="profile photo" src="assets/demo-profile-pic.png">
+		<div class="hero-section-sub-2">
+		    <img class="hero-profile-image" alt="profile photo" src="assets/demo-profile-pic.png">
 		</div>
 	    </div>
 	    <div class="my-links-div">
@@ -236,7 +295,7 @@ toggleButton.addEventListener('click', () => {
 	    </div>
 	</div>
 
-	<div style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+	<div>
 	    <div class="publication-section-div">
 		<div class="publications-section-1">
 		    <img src='assets/place_seq3.gif' width="100%" />
@@ -631,7 +690,7 @@ toggleButton.addEventListener('click', () => {
 	    </div>
 	</div>
 
-	<footer style="background-color: #f8f8f8; color: #333; text-align: center; padding: 1rem 0; margin-top: 2rem;border-top: 2px solid #eee;">
+	<footer style="background-color: #f8f8f800;color: #333;text-align: center;padding: 1rem 0;margin-top: 2rem;border-top: 2px solid #eeeeee00;">
 		<p>© 2024 Abdullah Al Noman. All rights reserved.</p>
 	</footer>
 </div>
